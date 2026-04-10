@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saarthi Says — Trusted Agricultural Services</title>
+  <meta name="description" content="Real-time market prices for pulses, cereals and agri-commodities. Expert trading insights by Saarthi Says — your trusted agricultural partner.">
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ── NAVIGATION ── -->
+<nav>
+  <a class="nav-logo" href="#" onclick="showPage('home')">
+    <img src="images/logo.png" alt="Saarthi Says Logo">
+    <span class="nav-brand">Saarthi<span>_says</span></span>
+  </a>
+  <div class="nav-links">
+    <a href="#" data-page="home"     onclick="showPage('home')"     class="active">Home</a>
+    <a href="#" data-page="prices"   onclick="showPage('prices')">Market Prices</a>
+    <a href="#" data-page="insights" onclick="showPage('insights')">Commodity Insights</a>
+    <a href="#" data-page="contact"  onclick="showPage('contact')">Contact</a>
+    <a href="mailto:Saarthi.says@gmail.com" class="nav-cta">Get Quote</a>
+  </div>
+</nav>
+
+<!-- ── LIVE TICKER ── -->
+<div class="ticker-wrap">
+  <div class="ticker-track" id="ticker"></div>
+</div>
+
+<div style="padding-top:38px;">
+
+<!-- ════════════════════════════════════
+     HOME PAGE
+════════════════════════════════════ -->
+<div class="page active" id="page-home">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-banner"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">Live Market Intelligence</div>
+      <h1>India's <em>Trusted</em><br>Agri Trading<br>Platform</h1>
+      <p>Real-time prices for pulses, cereals &amp; commodities. Expert market insights to help farmers and agribusinesses make smarter trade decisions.</p>
+      <div class="hero-btns">
+        <a class="btn-primary" href="#" onclick="showPage('prices')">View Live Prices</a>
+        <a class="btn-outline" href="#" onclick="showPage('contact')">Talk to Expert</a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-card"><div class="num">50+</div><div class="lbl">Commodities Tracked</div></div>
+      <div class="stat-card"><div class="num">LIVE</div><div class="lbl">Price Updates</div></div>
+      <div class="stat-card"><div class="num">100%</div><div class="lbl">Trusted Service</div></div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="section">
+    <div class="section-header">
+      <div class="section-tag">What We Do</div>
+      <h2>Agricultural Trading Services</h2>
+      <p>Comprehensive solutions for farmers, traders, and agribusinesses across India.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card"><div class="service-icon">📊</div><h3>Live Price Intelligence</h3><p>Real-time mandi prices for all major pulses, cereals, and agri-commodities sourced from key mandis across India.</p></div>
+      <div class="service-card"><div class="service-icon">🌾</div><h3>Commodity Trading</h3><p>Direct sourcing and trading of quality-graded agricultural produce — Toor Dal, Chana, Moong, Wheat, Rice, and more.</p></div>
+      <div class="service-card"><div class="service-icon">📈</div><h3>Market Research Reports</h3><p>In-depth commodity outlooks with supply-demand analysis, seasonal forecasts, and actionable buy/sell recommendations.</p></div>
+      <div class="service-card"><div class="service-icon">🤝</div><h3>B2B Procurement</h3><p>Bulk procurement solutions for food processors, wholesalers, and institutional buyers with quality assurance.</p></div>
+      <div class="service-card"><div class="service-icon">🌍</div><h3>Import &amp; Export Guidance</h3><p>Advisory on import logistics from Myanmar, Tanzania, East Africa, and export opportunities for Indian agri-produce.</p></div>
+      <div class="service-card"><div class="service-icon">📱</div><h3>Farmer Advisory</h3><p>Direct consultations helping farmers decide optimal selling windows based on market cycle, MSP, and seasonal patterns.</p></div>
+    </div>
+  </section>
+
+  <!-- TOOR SPOTLIGHT -->
+  <div class="toor-section">
+    <div class="toor-inner">
+      <div class="toor-img-wrap">
+        <img src="images/toor-report.jpg" alt="Toor Dal Market Outlook">
+        <div class="toor-img-badge">📋 Apr–Jun 2026 Outlook</div>
+      </div>
+      <div class="toor-content">
+        <div class="toor-sub">Featured Commodity Insight</div>
+        <h2>Toor <span>(Arhar) Dal</span><br>Market Outlook</h2>
+        <div class="insight-pills">
+          <span class="pill pill-buy">▲ BUY ON DIPS</span>
+          <span class="pill pill-bullish">Bullish Bias</span>
+          <span class="pill pill-risk">Regulatory Risk</span>
+        </div>
+        <div class="insight-metrics">
+          <div class="metric-box"><div class="m-label">Current Price Range</div><div class="m-val">₹6,500–7,200</div><div class="m-sub">per quintal · wholesale</div></div>
+          <div class="metric-box"><div class="m-label">Target by June 2026</div><div class="m-val">₹7,800–8,200</div><div class="m-sub">per quintal</div></div>
+          <div class="metric-box"><div class="m-label">Production 2025–26</div><div class="m-val">3.0–3.2 MT</div><div class="m-sub">vs ~4.5 MT demand</div></div>
+          <div class="metric-box"><div class="m-label">Supply Deficit</div><div class="m-val">~1.3–1.5 MT</div><div class="m-sub">ending stocks ~4.5 lakh MT</div></div>
+        </div>
+        <div class="insight-note">
+          <strong>Analyst View:</strong> Supply-demand gap is structural and data-backed. Accumulate on dips toward ₹6,500–6,800/qtl; target ₹7,800–8,200/qtl by June 2026. Primary bear risk is regulatory intervention.
+        </div>
+        <a class="btn-primary" href="#" onclick="showPage('insights')">View Full Report →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- WHY US -->
+  <section class="section section-alt">
+    <div class="section-header">
+      <div class="section-tag">Why Saarthi Says</div>
+      <h2>Built on Trust &amp; Expertise</h2>
+      <p>Your saarthi (companion) in every agricultural trade decision.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-item"><div class="why-num">15+</div><h4>Years in Agri-Trade</h4><p>Deep domain knowledge across pulses, cereals and commodity markets.</p></div>
+      <div class="why-item"><div class="why-num">50+</div><h4>Commodities Monitored</h4><p>Comprehensive coverage of all major pulses, cereals, oilseeds and spices.</p></div>
+      <div class="why-item"><div class="why-num">500+</div><h4>Trading Partners</h4><p>A trusted network of farmers, wholesalers, processors and exporters.</p></div>
+      <div class="why-item"><div class="why-num" style="font-size:2rem;line-height:1.2">Pan<br>India</div><h4>Market Reach</h4><p>Mandi data from Gulbarga, Akola, Latur, Bidar and all key trading hubs.</p></div>
+    </div>
+  </section>
+
+</div><!-- /page-home -->
+
+
+<!-- ════════════════════════════════════
+     MARKET PRICES PAGE
+════════════════════════════════════ -->
+<div class="page" id="page-prices">
+  <section class="section">
+    <div class="section-header">
+      <div class="section-tag">Live Data · Updated Daily</div>
+      <h2>Current Market Prices</h2>
+      <p>Wholesale mandi prices across India's key trading hubs. All prices in ₹ per quintal.</p>
+    </div>
+    <div class="market-tabs">
+      <button class="tab-btn active" onclick="filterMarket('all', this)">All Commodities</button>
+      <button class="tab-btn" onclick="filterMarket('pulse', this)">Pulses (दालें)</button>
+      <button class="tab-btn" onclick="filterMarket('cereal', this)">Cereals (अनाज)</button>
+      <button class="tab-btn" onclick="filterMarket('oilseed', this)">Oilseeds</button>
+      <button class="tab-btn" onclick="filterMarket('spice', this)">Spices</button>
+    </div>
+    <div class="market-grid" id="market-grid"></div>
+    <p style="text-align:center;margin-top:32px;color:var(--muted);font-size:0.8rem;">
+      ⚠️ Prices are indicative and for informational purposes only. Contact us for actual trade quotes. Last updated: April 10, 2026.
+    </p>
+  </section>
+</div><!-- /page-prices -->
+
+
+<!-- ════════════════════════════════════
+     COMMODITY INSIGHTS PAGE
+════════════════════════════════════ -->
+<div class="page" id="page-insights">
+  <div class="toor-section" style="padding-top:100px;">
+    <div style="max-width:1100px;margin:0 auto;">
+      <div class="section-header" style="margin-bottom:50px;">
+        <div class="section-tag light">Research Reports</div>
+        <h2 class="light">Commodity Market Insights</h2>
+        <p class="light">In-depth analysis to support your trading decisions. Updated quarterly.</p>
+      </div>
+      <div class="toor-inner">
+        <div class="toor-img-wrap">
+          <img src="images/toor-report.jpg" alt="Toor Dal Market Report">
+          <div class="toor-img-badge">Featured · Apr–Jun 2026</div>
+        </div>
+        <div class="toor-content">
+          <div class="toor-sub">Commodity Research · 1–3 Month View</div>
+          <h2>Toor <span>(Arhar) Dal</span></h2>
+          <div class="insight-pills">
+            <span class="pill pill-buy">▲ BUY ON DIPS</span>
+            <span class="pill pill-bullish">Bullish Bias</span>
+            <span class="pill pill-risk">Regulatory Risk</span>
+          </div>
+          <div class="insight-metrics">
+            <div class="metric-box"><div class="m-label">Price Band</div><div class="m-val">₹6,500–7,200</div><div class="m-sub">Bold/Premium: ₹7,200–8,000</div></div>
+            <div class="metric-box"><div class="m-label">Target (Jun 2026)</div><div class="m-val">₹7,800–8,200</div><div class="m-sub">Accumulate: ₹6,500–6,800</div></div>
+            <div class="metric-box"><div class="m-label">Production 25–26</div><div class="m-val">3.0–3.2 MT</div><div class="m-sub">vs ~4.5 MT annual demand</div></div>
+            <div class="metric-box"><div class="m-label">Supply Deficit</div><div class="m-val">1.3–1.5 MT</div><div class="m-sub">Ending stocks ~4.5 lakh MT</div></div>
+          </div>
+
+          <div class="factor-section-label" style="color:var(--amber)">🟢 Bullish Factors — 5 Drivers</div>
+          <div class="factor-row">① <strong>Structural Production Deficit</strong> — Output 3.0–3.2 MT vs consumption ~4.5 MT (MoA, GoI). The ~1.3–1.5 MT gap cannot be bridged by domestic supply alone this season.</div>
+          <div class="factor-row">② <strong>Critically Low Buffer Stocks</strong> — Ending stocks at a multi-year low of ~4.5 lakh MT. Physical availability tightens sharply through Apr–Jun lean window.</div>
+          <div class="factor-row">③ <strong>Weather-Damaged Crop Quality</strong> — Unseasonal rains hit Kalaburagi, Bidar &amp; Latur, Akola (late 2025). Lower FAQ-grade supply → premium for clean stock.</div>
+          <div class="factor-row">④ <strong>Import Cost Floor (USD/INR)</strong> — Myanmar &amp; East Africa imports are cost-sensitive. INR depreciation provides a natural price floor for domestic Toor.</div>
+          <div class="factor-row">⑤ <strong>Seasonal Arrival Dip Ahead</strong> — Apr–Jun is historically the leanest mandi arrival period. Farmers largely sold; wholesalers ration inventory by raising ask prices.</div>
+
+          <div class="factor-section-label" style="color:#FF6B5B">🔴 Key Risks — 3 Factors</div>
+          <div class="factor-row factor-row-risk">① <strong>Govt. Intervention — Top Risk</strong> — Stock limits on traders can trigger forced liquidation overnight. Single policy action asymmetrically more powerful than all 5 bullish factors combined. Monitor circulars weekly.</div>
+          <div class="factor-row factor-row-risk">② <strong>Record Duty-Free Import Volumes</strong> — Duty-free window extended into 2026. Tanzania &amp; Myanmar running at elevated volumes — acting as a hard cap on domestic price rally.</div>
+          <div class="factor-row factor-row-risk">③ <strong>Favourable Monsoon 2026 Forecast</strong> — Positive Kharif LRF may push traders to pre-emptively liquidate old stock 3–4 months before harvest. Watch June IMD forecast closely.</div>
+
+          <div class="insight-note" style="margin-top:20px;">
+            <strong>Watch Points — Next 4 Weeks:</strong> GoI stock-limit circular → immediate exit trigger · June IMD monsoon LRF → above-normal = pre-harvest sell-off risk · DGFT Apr–May import data · Weekly arrivals: Gulbarga &amp; Akola mandis
+          </div>
+          <a class="btn-primary" href="#" onclick="showPage('contact')">Request Custom Research →</a>
+        </div>
+      </div>
+
+      <div style="margin-top:48px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:32px;text-align:center;">
+        <p style="color:rgba(255,255,255,0.6);font-size:0.85rem;margin-bottom:16px;">Want personalised commodity reports and trade alerts for your specific needs?</p>
+        <a class="btn-primary" href="#" onclick="showPage('contact')">Contact Our Research Team →</a>
+      </div>
+    </div>
+  </div>
+</div><!-- /page-insights -->
+
+
+<!-- ════════════════════════════════════
+     CONTACT PAGE
+════════════════════════════════════ -->
+<div class="page" id="page-contact">
+  <div class="page-pad">
+  <div class="contact-section">
+    <div class="contact-inner">
+      <div class="contact-info">
+        <h2>Get in <span>Touch</span><br>with Our Team</h2>
+        <p>Whether you're a farmer looking to sell, a trader seeking price intelligence, or a business in need of agri-procurement solutions — we're here to help.</p>
+        <div class="contact-detail">
+          <div class="contact-icon">✉️</div>
+          <div><h5>Email Us</h5><a href="mailto:Saarthi.says@gmail.com">Saarthi.says@gmail.com</a></div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-icon">📞</div>
+          <div><h5>Call / WhatsApp</h5><p>Available Mon–Sat, 9AM–7PM IST</p></div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-icon">📍</div>
+          <div><h5>Market Coverage</h5><p>Gulbarga · Akola · Latur · Bidar · Mumbai · Delhi</p></div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-icon">⏱️</div>
+          <div><h5>Response Time</h5><p>Within 24 hours for all inquiries</p></div>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <h3>Send Us a Message</h3>
+        <div class="form-row">
+          <div class="form-group"><label>Full Name *</label><input type="text" id="cf-name" placeholder="Your name"></div>
+          <div class="form-group"><label>Phone Number</label><input type="tel" id="cf-phone" placeholder="+91 XXXXX XXXXX"></div>
+        </div>
+        <div class="form-group"><label>Email Address *</label><input type="email" id="cf-email" placeholder="your@email.com"></div>
+        <div class="form-group">
+          <label>I'm a</label>
+          <select id="cf-type">
+            <option value="">Select your role</option>
+            <option>Farmer / Kisan</option>
+            <option>Trader / Wholesaler</option>
+            <option>Food Processor / Manufacturer</option>
+            <option>Retailer</option>
+            <option>Importer / Exporter</option>
+            <option>Agri-Business</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Commodity of Interest</label>
+          <select id="cf-commodity">
+            <option value="">Select commodity</option>
+            <option>Toor Dal (Arhar)</option>
+            <option>Chana Dal</option>
+            <option>Moong Dal</option>
+            <option>Masoor Dal</option>
+            <option>Urad Dal</option>
+            <option>Wheat</option>
+            <option>Rice / Paddy</option>
+            <option>Maize</option>
+            <option>Soybean</option>
+            <option>Multiple Commodities</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group"><label>Message *</label><textarea id="cf-message" placeholder="Tell us about your requirement — quantity, quality grade, delivery location, timeline..."></textarea></div>
+        <button class="btn-submit" onclick="submitForm()">Send Message →</button>
+      </div>
+    </div>
+  </div>
+  </div>
+</div><!-- /page-contact -->
+
+</div><!-- /padding-top wrapper -->
+
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <img src="images/logo.png" alt="Saarthi Says">
+      <p>Your trusted companion for agricultural trade. Real-time prices, expert insights, and professional services for the Indian farming community.</p>
+      <div class="footer-email"><a href="mailto:Saarthi.says@gmail.com">Saarthi.says@gmail.com</a></div>
+    </div>
+    <div class="footer-col">
+      <h5>Quick Links</h5>
+      <a href="#" onclick="showPage('home')">Home</a>
+      <a href="#" onclick="showPage('prices')">Market Prices</a>
+      <a href="#" onclick="showPage('insights')">Commodity Insights</a>
+      <a href="#" onclick="showPage('contact')">Contact Us</a>
+    </div>
+    <div class="footer-col">
+      <h5>Commodities</h5>
+      <a href="#" onclick="showPage('prices');filterMarket('pulse',null)">Pulses (दालें)</a>
+      <a href="#" onclick="showPage('prices');filterMarket('cereal',null)">Cereals (अनाज)</a>
+      <a href="#" onclick="showPage('prices');filterMarket('oilseed',null)">Oilseeds</a>
+      <a href="#" onclick="showPage('prices');filterMarket('spice',null)">Spices</a>
+    </div>
+    <div class="footer-col">
+      <h5>Services</h5>
+      <a href="#">Live Price Intelligence</a>
+      <a href="#">Commodity Trading</a>
+      <a href="#">Market Research</a>
+      <a href="#">B2B Procurement</a>
+      <a href="#">Farmer Advisory</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Saarthi Says. Trusted Agricultural Services. All rights reserved.</p>
+    <div class="disclaimer">Prices are indicative only. Not financial advice. Trading in commodities involves risk. Always verify with market sources before trading.</div>
+  </div>
+</footer>
+
+<div class="success-toast" id="toast">✅ Message sent! We'll reply within 24 hours.</div>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
